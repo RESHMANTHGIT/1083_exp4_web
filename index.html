@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hope Foundation - Sign In & Sign Up</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+
+        <div class="logo-section">
+            <img src="https://cdn-icons-png.flaticon.com/512/2913/2913031.png"
+                 class="logo"
+                 alt="Charity Logo">
+
+            <h1>Hope Foundation</h1>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+
+                <li>
+                    <a href="#">Home</a>
+
+                    <!-- Dropdown Menu -->
+                    <ul class="dropdown">
+                        <li><a href="#">Our Mission</a></li>
+                        <li><a href="#">Our Programs</a></li>
+                        <li><a href="#">Volunteers</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">About</a>
+                </li>
+
+                <li>
+                    <a href="#">Programs</a>
+                </li>
+
+                <li>
+                    <a href="#">Donate</a>
+                </li>
+
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- Authentication Forms -->
+    <section class="container">
+
+        <!-- Sign In Box -->
+        <div class="box">
+
+            <h2>Sign In</h2>
+
+            <p class="form-text">
+                Welcome back! Sign in to continue.
+            </p>
+
+            <form>
+
+                <label for="username">
+                    Username / Email
+                </label>
+
+                <input type="text"
+                       id="username"
+                       placeholder="Enter Username or Email"
+                       required>
+
+
+                <label for="signin-password">
+                    Password
+                </label>
+
+                <input type="password"
+                       id="signin-password"
+                       placeholder="Enter Password"
+                       required>
+
+
+                <input type="submit"
+                       value="Sign In">
+
+            </form>
+
+        </div>
+
+
+        <!-- Sign Up Box -->
+        <div class="box">
+
+            <h2>Sign Up</h2>
+
+            <p class="form-text">
+                Create an account and join our mission.
+            </p>
+
+            <form>
+
+                <label for="name">
+                    Full Name
+                </label>
+
+                <input type="text"
+                       id="name"
+                       placeholder="Enter Your Name"
+                       required>
+
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input type="email"
+                       id="email"
+                       placeholder="Enter Your Email"
+                       required>
+
+
+                <label for="signup-password">
+                    Password
+                </label>
+
+                <input type="password"
+                       id="signup-password"
+                       placeholder="Create Password"
+                       required>
+
+
+                <input type="submit"
+                       value="Sign Up">
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            Hope Foundation, Tamil Nadu, India
+        </p>
+
+        <p>
+            © 2026-2027. RESHMANTH S (URK24CS1083)
+            - Web Technology Lab Batch 1.
+        </p>
+
+        <p>
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
+2. style.css
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Body */
+
+body {
+    background-color: #f4f4f4;
+}
+
+
+/* Header */
+
+header {
+    background: linear-gradient(#198754, #46b878);
+    min-height: 180px;
+    position: relative;
+}
+
+
+/* Logo Section */
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.logo-section h1 {
+    font-size: 32px;
+}
+
+
+/* Navigation Bar */
+
+nav {
+    background-color: #145c3b;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px 35px;
+    font-weight: bold;
+}
+
+
+/* Navigation Hover */
+
+nav ul li:hover {
+    background-color: #0b3d29;
+}
+
+
+/* Dropdown Menu */
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #198754;
+    width: 200px;
+    z-index: 10;
+}
+
+.dropdown li {
+    width: 100%;
+}
+
+.dropdown li a {
+    padding: 15px;
+    color: white;
+}
+
+
+/* Show Dropdown */
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+
+/* Dropdown Hover */
+
+.dropdown li:hover {
+    background-color: #0d6b40;
+}
+
+
+/* Form Section */
+
+.container {
+
+    background-image:
+        url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1500&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 50px;
+
+    padding: 80px 30px;
+
+    min-height: 500px;
+}
+
+
+/* Form Box */
+
+.box {
+
+    background-color: white;
+
+    width: 350px;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Form Heading */
+
+.box h2 {
+
+    text-align: center;
+
+    color: #198754;
+
+    margin-bottom: 10px;
+
+    font-size: 28px;
+}
+
+
+/* Form Description */
+
+.form-text {
+
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+
+/* Labels */
+
+label {
+
+    font-weight: bold;
+
+    display: block;
+
+    margin-top: 10px;
+
+    color: #333;
+}
+
+
+/* Text Inputs */
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 8px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+
+/* Input Focus */
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+
+    border: 2px solid #198754;
+
+    outline: none;
+}
+
+
+/* Submit Button */
+
+input[type="submit"] {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    background-color: #198754;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+
+/* Submit Button Hover */
+
+input[type="submit"]:hover {
+
+    background-color: #145c3b;
+}
+
+
+/* Footer */
+
+footer {
+
+    background-color: #145c3b;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+
+    nav ul {
+
+        flex-direction: column;
+    }
+
+    nav ul li a {
+
+        text-align: center;
+    }
+
+    .dropdown {
+
+        position: static;
+
+        width: 100%;
+    }
+
+    .container {
+
+        flex-direction: column;
+
+        padding: 50px 20px;
+    }
+
+    .box {
+
+        width: 100%;
+
+        max-width: 400px;
+    }
+
+    .logo-section {
+
+        justify-content: center;
+
+        text-align: center;
+
+        flex-direction: column;
+    }
+
+    .logo {
+
+        margin-right: 0;
+
+        margin-bottom: 10px;
+    }
+}
